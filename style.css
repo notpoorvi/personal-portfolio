@@ -1,0 +1,51 @@
+/* Viewport height = 497px */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+#favicon{
+    border-radius: 50%;
+    width: 4%;
+    margin-top: 21px;
+    margin-left: 40px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-links{
+    display: inline-flex;
+    margin: 0px 18%;
+}
+
+.button{
+    background-color: #a8cdff;
+    color: black;
+    margin: 30px 16px 16px 16px;
+    text-decoration: none;
+    padding: 5px 16px;
+    font-size: 24px;
+}
+
+.bio{
+    background-color: grey;
+    margin-top: 21px;
+    height: 350px;
+}
+
+.name{
+    font-size: 55px;
+    margin: 0px;
+    position: relative;
+    left: 16.5%;
+    top: 10%;
+    display: inline;
+}
