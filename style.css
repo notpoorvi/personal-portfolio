@@ -1,51 +1,102 @@
-/* Viewport height = 497px */
-
-*{
+* {
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-body{
+body {
     margin: 0;
 }
 
-#favicon{
+#favicon {
     border-radius: 50%;
     width: 4%;
     margin-top: 21px;
-    margin-left: 40px;
+    position: relative;
+    right: 12%;
+    border: 1px solid black;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.header-links{
+.header-links {
     display: inline-flex;
-    margin: 0px 18%;
+    position: relative;
+    right: 2%;
+    flex-wrap: wrap;
 }
 
-.button{
-    background-color: #a8cdff;
+.button {
+    background-color: rgb(229 240 255);
     color: black;
     margin: 30px 16px 16px 16px;
     text-decoration: none;
     padding: 5px 16px;
     font-size: 24px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
-.bio{
-    background-color: grey;
+#name-bio {
+    margin: 0px 110px 0px 150px;
+}
+
+.name {
+    font-size: 68px;
+    margin: 10px 0px 8px 0px;
+}
+
+#bio {
+    font-size: 22.5px;
+}
+
+.bio {
+    background-color: rgb(229 240 255);
     margin-top: 21px;
-    height: 350px;
+    display: flex;
+    align-items: center;
+    height: 550px;
+    border: 2px solid black;
 }
 
-.name{
-    font-size: 55px;
-    margin: 0px;
-    position: relative;
-    left: 16.5%;
-    top: 10%;
-    display: inline;
+#bio-img {
+    height: 448px;
+    width: 500px;
+    border: 2px solid black;
+    margin: 0px 150px 0px 100px;
+}
+
+@media only screen and (max-width: 1215px) {
+    #favicon {
+        width: 8%;
+        right: 0;
+    }
+
+    .header-links {
+        right: 0;
+    }
+
+    #name-bio {
+        margin: 0;
+    }
+
+    .bio {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #bio-img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    #bio-img,
+    .bio {
+        border: none;
+    }
 }
