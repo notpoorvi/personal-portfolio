@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+#favicon {
+    border-radius: 50%;
+    width: 4%;
+    margin-top: 21px;
+    position: relative;
+    right: 12%;
+    border: 1px solid black;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-links {
+    display: inline-flex;
+    position: relative;
+    right: 2%;
+    flex-wrap: wrap;
+}
+
+.button {
+    background-color: rgb(229 240 255);
+    color: black;
+    margin: 30px 16px 16px 16px;
+    text-decoration: none;
+    padding: 5px 16px;
+    font-size: 24px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#name-bio {
+    margin: 0px 110px 0px 150px;
+}
+
+.name {
+    font-size: 68px;
+    margin: 10px 0px 8px 0px;
+}
+
+#bio {
+    font-size: 22.5px;
+}
+
+.bio {
+    background-color: rgb(229 240 255);
+    margin-top: 21px;
+    display: flex;
+    align-items: center;
+    height: 550px;
+    border: 2px solid black;
+}
+
+#bio-img {
+    height: 448px;
+    width: 500px;
+    border: 2px solid black;
+    margin: 0px 150px 0px 100px;
+}
+
+@media only screen and (max-width: 1215px) {
+    #favicon {
+        width: 8%;
+        right: 0;
+    }
+
+    .header-links {
+        right: 0;
+    }
+
+    #name-bio {
+        margin: 0;
+    }
+
+    .bio {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #bio-img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    #bio-img,
+    .bio {
+        border: none;
+    }
+}
