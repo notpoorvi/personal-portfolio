@@ -64,8 +64,9 @@ body {
 }
 
 #bio-img {
-    height: 448px;
-    width: 500px;
+    /* height: 448px;
+    width: 500px; */
+    width: 65%;
     border: 2px solid black;
     margin: 0px 150px 0px 100px;
 }
@@ -128,8 +129,25 @@ body {
         right: 0;
     }
 
+    .name{
+        font-size: 40px;
+    }
+
     #name-bio {
         margin: 0;
+    }
+
+    .external-links{
+        flex-wrap: wrap;
+    }
+
+    .github, .linkedin, .button{
+        font-size: 12px;
+    }
+
+    .section{
+        flex-wrap: wrap; 
+        margin: 0 20px;
     }
 
     .bio {
@@ -141,10 +159,5 @@ body {
         width: 100%;
         height: auto;
         margin: 0;
-    }
-
-    #bio-img,
-    .bio {
-        border: none;
     }
 }
