@@ -105,6 +105,10 @@ body {
     flex-direction: column;
 }
 
+#wex, #volunteer, #skills-and-projects{
+    font-size: 22.5px;
+}
+
 .volunteer, .passions{
     flex-direction: row-reverse;
     margin-top: 4%;
@@ -114,9 +118,22 @@ body {
     margin-top: 4%;
 }
 
-.project-link, .project-github-link{
+.intext-links{
     font-size: 22.5px;
     color: black;
+}
+
+.images{
+    display: flex;
+    margin: 0px 160px 0px 130px;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.images img{
+    width: 351px;
+    height: 385px;
+    border: 2px solid black;
 }
 
 @media only screen and (max-width: 1215px) {
@@ -155,7 +172,17 @@ body {
         height: auto;
     }
 
-    #bio-img {
+    .images{
+        flex-direction: column;
+    }
+
+    .images img{
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+
+    #bio-img{
         width: 100%;
         height: auto;
         margin: 0;
