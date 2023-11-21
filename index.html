@@ -23,14 +23,22 @@
     </header>
     <div class="bio">
         <div id="name-bio">
-            <p class="name">Poorvi Bhatia</p>
-            <p class="content">Hey, I'm Poorvi, a second-year Computing Science student at SFU. I love diving into data
-                structures, algorithms, and the world of software engineering. When I'm not coding, you'll find me
-                behind the lens, exploring the simplicity of photography. Ready for the next coding challenge and
-                capturing moments one snapshot at a time.</p>
+            <span class="name" id="element">Poorvi Bhatia</span>
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <script>
+                var typed = new Typed('#element', {
+                    strings: ['', 'Poorvi Bhatia'],
+                    typeSpeed: 50,
+                });
+            </script>
+            <p class="content">Hey, I'm Poorvi, a second-year Computing Science student at SFU. Navigating the dynamic
+                world of software engineering, I find genuine joy in exploring new coding concepts and languages. Beyond
+                the screen, you'll often find me immersed in the art of photography, capturing life's moments. Always
+                ready for the next coding challenge, I balance the intricacies of programming with the simplicity of
+                creative expression.</p>
         </div>
         <div class="bio-image">
-            <img id="bio-img" src="images/DSC_3497.jpeg" alt="">
+            <img id="bio-img" src="images/img1.jpeg" alt="">
         </div>
     </div>
     <div class="external-links">
@@ -43,14 +51,25 @@
         </p>
         <div id="wex">
             <p class="content">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi expedita molestias quisquam incidunt,
-                dicta ducimus odit asperiores quia corporis voluptas eveniet et illum quae consectetur. Ab, incidunt
-                libero ipsum voluptate consectetur nam optio debitis!
+            <p>Barista | Blenz Coffee</p>
+            <p>
+                Having worked as a barista in a dynamic environment, I've efficiently handled drink preparation, order
+                taking, and customer service while maintaining a tidy workspace. This experience has cultivated my
+                teamwork and multitasking skills, ensuring a smooth and enjoyable customer experience.
             </p>
+            </p>
+            <hr>
             <p class="content">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi expedita molestias quisquam incidunt,
-                dicta ducimus odit asperiores quia corporis voluptas eveniet et illum quae consectetur. Ab, incidunt
-                libero ipsum voluptate consectetur nam optio debitis!
+            <p>Freelance Photographer and Digital Artist</p>
+            <p>
+                As a visual storyteller, I've honed my skills in capturing captivating moments, specializing in
+                photography for music album covers. Additionally, my creative journey extends to the digital realm,
+                where I've sold unique digital art and photographs as NFTs on the blockchain, exploring the intersection
+                of creativity and technology.
+            </p>
+            <a href="https://foundation.app/@notpoorvi" target="_blank" class="intext-links">NFTs on Foundation</a>
+            &nbsp;
+            <a href="https://opensea.io/notpoorvi" target="_blank" class="intext-links">NFTs on OpenSea</a>
             </p>
         </div>
     </section>
@@ -59,10 +78,21 @@
             Volunteer
         </p>
         <div id="volunteer">
+            <p>Volunteer | Greater Vancouver Food Bank</p>
             <p class="content">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi expedita molestias quisquam incidunt,
-                dicta ducimus odit asperiores quia corporis voluptas eveniet et illum quae consectetur. Ab, incidunt
-                libero ipsum voluptate consectetur nam optio debitis!
+                During my time as a volunteer at the food bank, I took on a pivotal role in managing queues and
+                distributing food to those in need. This involved not only the hands-on work of setting up and cleaning
+                up but also fostering a sense of community support. It was a fulfilling experience that allowed me to
+                contribute directly to the well-being of others while developing organizational and teamwork skills.
+            </p>
+            <hr style="margin-right: 10%;">
+            <p>CS Peer Tutor | SFU</p>
+            <p class="content">
+                I enthusiastically volunteered as a computer science peer tutor at my university, assisting first-year
+                students in navigating their courses. My responsibilities included providing guidance on challenging
+                concepts, aiding with problem-solving, and fostering a supportive learning environment. This experience
+                not only deepened my understanding of the subject matter but also allowed me to contribute to the
+                academic success of my peers.
             </p>
         </div>
     </section>
@@ -71,13 +101,18 @@
             Skills and Projects
         </p>
         <div id="skills-and-projects">
-            <p class="content">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi expedita molestias quisquam incidunt,
-                dicta ducimus odit asperiores quia corporis voluptas eveniet et illum quae consectetur. Ab, incidunt
-                libero ipsum voluptate consectetur nam optio debitis!
-            </p>
-            <a href="https://leafy-board.netlify.app/" class="project-link" target="_blank">Project Link</a>
-            <a href="https://github.com/ayanahye/leafy-board" class="project-github-link" target="_blank">Project GitHub
+            <div class="content">
+                <p>
+                    Proficient in C, C++, JavaScript, Python, HTML, and CSS.
+                    <hr>
+                    During a hackathon, I played a key role in developing the frontend for a website called "Leafy
+                    Board." This innovative platform allows users to input their goals for the upcoming year on a
+                    virtual board. Embracing the theme of 'Turning Over a New Leaf,' the website serves as a digital
+                    vision board, providing users with a visually engaging way to set and track their aspirations.
+                </p>
+            </div>
+            <a href="https://leafy-board.netlify.app/" class="intext-links" target="_blank">Project Link</a>
+            <a href="https://github.com/ayanahye/leafy-board" class="intext-links" target="_blank">Project GitHub
                 Link</a>
         </div>
     </section>
@@ -87,10 +122,16 @@
         </p>
         <div id="passions-content">
             <p class="content">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi expedita molestias quisquam incidunt,
-                dicta ducimus odit asperiores quia corporis voluptas eveniet et illum quae consectetur. Ab, incidunt
-                libero ipsum voluptate consectetur nam optio debitis!
+                My passions extend beyond the realm of coding, embracing the thrill of travel, the serenity of hiking, and the joy of capturing life's stories through my camera lens. Whether I'm exploring new landscapes or delving into a coding project, each experience adds a unique chapter to my ever-evolving journey.
             </p>
+        </div>
+    </section>
+    <section class="images">
+        <div class="image1">
+            <img src="images/img2.jpeg" alt="">
+        </div>
+        <div class="image2">
+            <img src="images/img3.jpeg" alt="">
         </div>
     </section>
 </body>
